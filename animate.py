@@ -13,9 +13,9 @@ ax.axis([0,10,-1,1])
 ax.set_axis_bgcolor('cyan')
 
 #Draw a series of circle on sin ant its inverse function 
-circle_line, =ax.plot(x,np.sin(x), 'o', markerfacecolor='w', markeredgecolor='red',
+circle_line, =ax.plot(x,np.sin(x), 'o', markerfacecolor='red', markeredgecolor='red',
 markersize=30, markeredgewidth = 5)
-circle_line1, =ax.plot(x,np.sin(-x), 'o', markerfacecolor='w', markeredgecolor='blue',
+circle_line1, =ax.plot(x,np.sin(-x), 'o', markerfacecolor='blue', markeredgecolor='blue',
 markersize=30, markeredgewidth = 5)
 
 #Draw the sin and its inverse function
@@ -50,7 +50,7 @@ def animate(i):
    return line,line1,line2,line3,circle_line,circle_line1,diamond_point,diamond_point1
 
 #Interval draws a new frame every given milliseconds
-animate= animation.FuncAnimation(fig, animate, np.arange(1,50),init_func=init,interval=25)
+animate= animation.FuncAnimation(fig, animate, np.arange(1,50),init_func=init,interval=15)
 animate.save(ph +"/animate.mp4", fps=5)
 
 
