@@ -10,7 +10,7 @@ fig,ax=plt.subplots()
 x=np.arange(0, 3*np.pi , 0.20)
 ax.axis([0,10,-1,1])
 #Setting background color
-ax.set_axis_bgcolor('white')
+ax.set_axis_bgcolor('cyan')
 
 #Draw a series of circle on sin ant its inverse function 
 circle_line, =ax.plot(x,np.sin(x), 'o', markerfacecolor='silver', markeredgecolor='red',
