@@ -14,9 +14,9 @@ ax.set_axis_bgcolor('cyan')
 
 #Draw a series of circle on sin ant its inverse function 
 circle_line, =ax.plot(x,np.sin(x), 'o', markerfacecolor='silver', markeredgecolor='red',
-markersize=15, markeredgewidth = 5)
+markersize=20, markeredgewidth = 5)
 circle_line1, =ax.plot(x,np.sin(-x), 'o', markerfacecolor='gold', markeredgecolor='blue',
-markersize=15, markeredgewidth = 5)
+markersize=20, markeredgewidth = 5)
 
 #Draw the sin and its inverse function
 line, = ax.plot(x,np.sin(x),color='blue',linestyle='-',linewidth=4)
